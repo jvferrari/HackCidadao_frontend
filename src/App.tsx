@@ -1,9 +1,9 @@
-
+import Home from "./pages/HOME/Home";
 
 function App() {
   
   return (
-    <h1>Olá HackCidadão</h1>
+    <Home/>
   )
 }
 
