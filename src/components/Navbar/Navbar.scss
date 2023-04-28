@@ -1,0 +1,35 @@
+@use '../../variables';
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    padding: .5rem 1rem;
+    background-color: variables.$primary-color ;  
+
+    & .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: variables.$secondary-color;
+        font-weight: 600;
+        cursor: pointer;
+
+        &_fast-acess {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translate(-50%);
+            cursor: pointer;
+        }
+        & div {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

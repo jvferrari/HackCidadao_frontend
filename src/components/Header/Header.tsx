@@ -1,17 +1,13 @@
-import './Header.css';
 import { IoPersonCircleOutline } from 'react-icons/io5';
-import Logo from '../../../public/assets/img/logo.png'
+import './Header.scss';
 
-function Header() {
+function Header () {
     return(
-        <>
-            <div className='header'>
-                <div className='divAbstract'></div>
-                <img src={Logo} alt="Logo" />
-                <div className='header_iconPerfil'><IoPersonCircleOutline /></div>
-            </div>
-            <div className='ghostHeader'></div>
-        </>
+        <header className='header'>
+            <div></div>
+            <div className='header_logo'>Logo</div>
+            <div className='header_icon-profile'> <IoPersonCircleOutline /> </div>
+        </header>
     )
 }
 
