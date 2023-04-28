@@ -1,0 +1,35 @@
+@use '../../variables';
+
+#camera-space {
+    margin: auto;
+    width: 100vw;
+    position: relative;
+
+    & video {
+        width: 100%;
+        height: 100%;
+    }
+
+    & .close {
+        color: variables.$primary-color;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2rem;
+    }
+    & + button {
+        border: none;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.304);
+        background-color: variables.$primary-color;
+        color: white;
+        font-family: variables.$font-family-default;
+        font-weight: 600;
+    }
+}

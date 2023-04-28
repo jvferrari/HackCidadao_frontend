@@ -1,0 +1,42 @@
+@use '../../variables';
+
+.carousel {
+    width: 90%;
+    height: 8rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+     &_btn-arrow {
+        font-size: 1.2rem;
+        color: variables.$primary-color;
+        z-index: 1;
+        margin: 0 .5rem;
+     }
+     &_img-banner {
+        position: absolute;   
+     }
+     &_messages {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        z-index: 2;
+        color: variables.$secondary-color;
+     }
+}
+.section-scrollbar {
+   margin-top: 2rem;
+
+   & p:first-child {
+      color: variables.$font-color-default;
+   }
+   & p:nth-child(2) {
+      color: variables.$font-color-variant;
+      font-size: 14px;
+   }
+}

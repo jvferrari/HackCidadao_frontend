@@ -1,0 +1,19 @@
+@use '../../variables';
+
+.header {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+
+    & div:first-child{
+        width: 2rem;
+        height: 2rem;
+    }
+    &_icon-profile {
+        font-size: 2rem;
+        color: variables.$secondary-color;
+    }
+}

@@ -1,24 +1,26 @@
-import './Navbar.css';
-import FAC from '../../../public/assets/icons/fast-acess-camera.png';
-import Pointer from '../../../public/assets/icons/pointer.svg';
-import Search from '../../../public/assets/icons/search.svg';
+import { CiLocationOn } from 'react-icons/ci';
+import { BiSearch } from 'react-icons/bi';
+import FastAcess from '../../assets/fast-acess.png';
+import { Link } from 'react-router-dom';
+
+import './Navbar.scss';
 
 function Navbar() {
+    
     return(
-        <div>
-            <div className='navbar'>
-                <div className='box'>
-                    <img src={Pointer} alt="" />
-                    <p>PETS NO MAPA</p>
-                </div>
-                <img className='navbar_fast_acess_camera' src={FAC} />
-                <div className='box'>
-                    <img src={Search}/>
-                    <p>PET PERDIDO</p>
-                </div>
+        <nav>
+            <div className="box">
+                <div><CiLocationOn/></div>
+                <p>PETS NO MAPA</p>  
+            </div>                
+            <Link to='/camera' className='box_fast-acess'>
+                <img src={FastAcess}/>
+            </Link>
+            <div className="box">
+                <div><BiSearch/></div>
+                <p>PET PERDIDO</p> 
             </div>
-            <div className='ghostNavbar'></div>
-        </div>
+        </nav>
     )
 }
 
