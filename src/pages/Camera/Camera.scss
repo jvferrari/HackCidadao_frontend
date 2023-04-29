@@ -10,19 +10,18 @@
         height: 100%;
     }
 
-    & .close {
-        color: variables.$primary-color;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        font-size: 2rem;
-    }
+    // & .close {
+    //     color: variables.$primary-color;
+    //     position: absolute;
+    //     right: 1rem;
+    //     top: 1rem;
+    //     font-size: 2rem;
+    //     z-index: 999;
+    // }
+
     & + button {
         border: none;
-        position: absolute;
         bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
         width: 80px;
         height: 80px;
         border-radius: 50%;
@@ -31,5 +30,42 @@
         color: white;
         font-family: variables.$font-family-default;
         font-weight: 600;
+    }
+}
+.btn-use {
+    border: none;
+    position: absolute;
+    bottom: 3.5rem;
+    right: 0.5rem;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: variables.$primary-color;
+    color: white;
+    font-family: variables.$font-family-default;
+    font-weight: 600;
+}
+
+.container_form {
+    & div {
+        margin-bottom: 1rem;
+    }
+    & h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &_picture {
+        display: flex;
+        flex-direction: column;
+    }
+    &_btn-register{
+        border: none;
+        padding: 8px 16px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.305);
+        background-color: variables.$primary-color;
+        color: white;
+        font-weight: 600;
+        font-family: variables.$font-family-default;
+        cursor: pointer;
     }
 }
